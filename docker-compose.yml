@@ -162,8 +162,8 @@ services:
       dockerfile: openwisp_postfix/Dockerfile
     env_file:
       - .env
-    volumes:
-      - openwisp_certs:/etc/ssl/mail
+#    volumes:
+#      - openwisp_certs:/etc/ssl/mail
 
   openvpn:
     image: openwisp/openwisp-openvpn:latest
