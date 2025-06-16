@@ -219,7 +219,6 @@ volumes:
   influxdb_data: {}
   postgres_data: {}
   redis_data: {}
-  openwisp_certs: {}
   openwisp_ssh: {}
   openwisp_media: {}
   openwisp_static: {}
