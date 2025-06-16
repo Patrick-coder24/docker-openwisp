@@ -123,7 +123,7 @@ services:
       - openwisp_static:/opt/openwisp/public/static:ro
       - openwisp_media:/opt/openwisp/public/media:ro
       - openwisp_private_storage:/opt/openwisp/public/private:ro
-      - openwisp_certs:/etc/letsencrypt
+#      - openwisp_certs:/etc/letsencrypt
       - ./customization/theme:/opt/openwisp/public/custom:ro
     networks:
       default:
@@ -132,7 +132,7 @@ services:
          - api.internal
     ports:
       - "80:80"
-      - "443:443"
+#      - "443:443"
     depends_on:
       - dashboard
       - api
