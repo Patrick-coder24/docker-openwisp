@@ -7,3 +7,5 @@
 # EMAIL_PORT =
 # EMAIL_USE_TLS =
 # EMAIL_TIMEOUT =
+
+FLOORPLAN_STORAGE = 'django.core.files.storage.FileSystemStorage'
