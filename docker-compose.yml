@@ -27,8 +27,12 @@ services:
       - openwisp_ssh:/home/openwisp/.ssh
       - influxdb_data:/var/lib/influxdb
       - ./customization/configuration/django/:/opt/openwisp/openwisp/configuration:ro
-      - ./customization/configuration/django/custom_django_settings.py:/opt/openwisp/custom_settings/custom_django_settings.py
-
+      - ./customization/configuration/django/custom_django_settings.py:/opt/openwisp/custom_django_settings.py
+    depends_on:
+      - postgres
+      - redis
+      - postfix
+      - influxdb
   api:
     image: openwisp/openwisp-api:latest
     restart: always
